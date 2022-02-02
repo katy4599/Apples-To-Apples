@@ -5,16 +5,16 @@ async function main() {
     const myAge = await input.text('What is your Age?');
     const n = (drivingAge - myAge);
 
-    if (myAge > drivingAge) {
+    while (myAge > drivingAge) {
         const hasLicense = await input.confirm('Do you have your license?')
         
         if (myAge >= drivingAge && !hasLicense) {
-            console.log('Sorry Loser!')   
+            console.log('Go get your license!')   
         } else if (myAge >= drivingAge && hasLicense) {
             console.log('You can drive!')
-        }
-    } else {
+        } else {
         console.log(`Wait ${ n } years!`)
+        }
     }
 }   
 

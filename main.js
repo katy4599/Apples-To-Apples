@@ -2,7 +2,6 @@ import input from 'input';
 
 async function main() {
     const shopping = [];
-    
     let finished = false;
     
     while (!finished) {
@@ -15,8 +14,7 @@ async function main() {
         }
     } 
     console.log('Here is your shopping list!');
-    console.log(shopping);
-    
+    console.log(shopping); 
 }
 
 main()

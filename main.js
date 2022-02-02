@@ -7,7 +7,7 @@ async function main() {
     while (!finished) {
         const resp = await input.text('Enter an item (or "finished")');
         
-        if (resp == 'finished') {
+        if (resp.toLowerCase() == 'finished') {
             finished = true     
         } else {
             shopping.push(resp)
